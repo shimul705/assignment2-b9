@@ -31,6 +31,10 @@ nav {
   margin-bottom: 50px;
 }
 
+nav .hamburger {
+  display: none;
+}
+
 nav>ul {
   display: flex;
   width: 44%;
@@ -376,7 +380,66 @@ header {
   background: rgba(233, 68, 68, 0.05);
 }
 
+/* ==============pricing section================ */
+.pricing-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 
+
+}
+
+.pricing-content hr {
+  width: 60%;
+  border-top: 2px solid rgba(32, 25, 25, 0.471);
+}
+
+.price-card>ul li {
+  list-style: none;
+  line-height: 30px;
+}
+
+.price-card p {
+  width: 80%;
+  margin: 30px auto;
+
+}
+
+.price-btn {
+  background:  #FFF;
+  color: #FF5400;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px crimson;
+}
+
+
+.price-card {
+  width: 30%;
+  /* border: 2px solid #FFF; */
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #ff5500cc, #FF5400);
+  color: #FFF;
+  box-shadow: 8px 8px 20px crimson;
+  padding: 20px 0;
+}
+
+.price-card h3 {
+  font-size: 2.5rem;
+  font-weight: 700px;
+
+}
+.pricing{
+  margin-bottom: 100px;
+}
+.price-card h2 {
+  font-size: 2.2rem;
+  font-weight: 700px;
+}
 
 /* News letter section */
 .newsletter {
@@ -590,6 +653,29 @@ footer small {
     margin-bottom: 50px;
   }
 
+  .logo img {
+    margin-right: 0px;
+  }
+
+  .logo-title1 {
+    margin-right: 5px;
+  }
+
+  .logo-title {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  nav {
+    margin-bottom: 20px;
+  }
+
+  nav .hamburger {
+    display: initial;
+    display: flex;
+    align-items: center;
+  }
+
   /* popular tour */
   .popular-tour {
     justify-content: center;
@@ -634,61 +720,90 @@ footer small {
     top: 130px;
     left: 200px;
   }
+
   .gridimage3 h3 {
     /* position: absolute; */
     top: 130px;
     left: 208px;
   }
+
   .gridimage4 h3 {
     /* position: absolute; */
     top: 130px;
     left: 165px;
   }
+
   .gridimage5 h3 {
     /* position: absolute; */
     top: 130px;
     left: 210px;
   }
+
   .gridimage6 h3 {
     /* position: absolute; */
     top: 130px;
     left: 180px;
   }
+
   .gridimage7 h3 {
     /* position: absolute; */
     top: 130px;
     left: 185px;
   }
-/* Why chose us */
 
-.flexus{
-  flex-direction: column;
-}
-#s3>h2,.flexus h2,p,img{
-  padding: 10px;
-  margin: 0;
-}
+  /* Why chose us */
 
-.us .classus{
-  width: 100%;
-  padding: 0;
-}
+  .flexus {
+    flex-direction: column;
+  }
 
-/* newsletter */
-.form-content{
-  width: 100%;
-  margin-bottom: 20px;
-}
-.position-70{
-  width: 100%;
-}
-.position-70 img{
-  width: 100%;
-}
+  #s3>h2,
+  .flexus h2,
+  p,
+  img {
+    padding: 10px;
+    margin: 0;
+  }
 
-/* footer */
-footer div img{
-  margin-right: 2px;
-}
+  .us .classus {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* newsletter */
+  .form-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .position-70 {
+    width: 100%;
+  }
+
+  .position-70 img {
+    width: 100%;
+  }
+
+  /* footer */
+  footer div img {
+    margin-right: 2px;
+  }
+
+  footer {
+    padding: 40px;
+  }
+
+  .socialicon {
+    margin-bottom: 20px;
+  }
+
+  /* pricing content */
+  .pricing-content{
+    flex-direction: column;
+  }
+  .price-card{
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
 }
