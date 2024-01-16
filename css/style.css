@@ -659,9 +659,36 @@ footer small {
     top: 130px;
     left: 185px;
   }
+/* Why chose us */
 
+.flexus{
+  flex-direction: column;
+}
+#s3>h2,.flexus h2,p,img{
+  padding: 10px;
+  margin: 0;
+}
 
+.us .classus{
+  width: 100%;
+  padding: 0;
+}
 
+/* newsletter */
+.form-content{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.position-70{
+  width: 100%;
+}
+.position-70 img{
+  width: 100%;
+}
 
+/* footer */
+footer div img{
+  margin-right: 2px;
+}
 
 }
