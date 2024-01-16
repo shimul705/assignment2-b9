@@ -14,11 +14,12 @@ footer * {
   padding: 0;
 }
 
+
+
 /* Header Part */
 
 header,
-main,
-footer {
+main {
   width: 82%;
   margin: 0 auto;
 }
@@ -105,15 +106,18 @@ nav li a {
   text-align: center;
 
 }
-.heading-input>button{
+
+.heading-input>button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.heading-input button img{
+
+.heading-input button img {
   position: relative;
   left: 1px;
 }
+
 .header-content p {
   color: #FFF;
   margin: 0 auto;
@@ -415,7 +419,7 @@ header {
 }
 
 .price-btn {
-  background:  #FFF;
+  background: #FFF;
   color: #FF5400;
   font-weight: 800;
   font-size: 1rem;
@@ -441,9 +445,11 @@ header {
   font-weight: 700px;
 
 }
-.pricing{
+
+.pricing {
   margin-bottom: 100px;
 }
+
 .price-card h2 {
   font-size: 2.2rem;
   font-weight: 700px;
@@ -601,11 +607,16 @@ footer small {
   font-size: 1rem;
   font-weight: 300;
 }
-.pt-image iframe{
-  
+
+.pt-image iframe {
+
   width: 700px;
   height: 380px;
 }
+
+
+
+
 
 /* =============Responsive for mobile============= */
 @media screen and (max-width: 600px) {
@@ -613,15 +624,18 @@ footer small {
     margin: 0 auto;
   } */
 
-  .pt-image iframe{
-  
+  .pt-image iframe {
+
     width: 100%;
     height: 350px;
   }
 
+  .save-upto-70 {
+    right: 10px;
+  }
+
   header,
-  main,
-  footer {
+  main {
     width: 90%;
     /* margin: 0 auto; */
   }
@@ -807,7 +821,7 @@ footer small {
   }
 
   footer {
-    padding: 40px;
+    padding: 20px 0;
   }
 
   .socialicon {
@@ -815,10 +829,11 @@ footer small {
   }
 
   /* ================pricing content================= */
-  .pricing-content{
+  .pricing-content {
     flex-direction: column;
   }
-  .price-card{
+
+  .price-card {
     width: 100%;
     margin-bottom: 30px;
   }
