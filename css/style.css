@@ -716,7 +716,19 @@ footer small {
   }
 
   .save-upto-70 {
+    width: 55%;
+    padding: 10px;
     right: 10px;
+    bottom: 30px;
+  }
+
+  .save-upto-70 h2 {
+    font-size: 1.25rem;
+    white-space: nowrap;
+  }
+
+  .save-upto-70 p {
+    font-size: 1rem;
   }
 
   header,
@@ -750,7 +762,8 @@ footer small {
   .heading-input>input,
   .heading-input>select {
     width: 100%;
-    margin: 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
   }
 
   .heading-text {
@@ -837,8 +850,8 @@ footer small {
 
   #s3>h2,
   .flexus h2,
-  p,
-  img {
+  .us p,
+  .us img {
     padding: 10px;
     margin: 0;
   }
@@ -874,6 +887,12 @@ footer small {
 
   .socialicon {
     margin-bottom: 20px;
+    width: auto;
+    gap: 16px;
+  }
+
+  .newsletter-form>button {
+    padding: 14px 0;
   }
 
   /* ================pricing content================= */
