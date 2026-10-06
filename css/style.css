@@ -748,30 +748,66 @@ footer small {
     /* padding: 0 1rem; */
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
-    width: 80%;
-    margin: 48px auto 106px;
+    width: 85%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin: 32px auto 0;
     align-items: center;
   }
 
   .heading-input>input,
   select {
-    height: 60px;
+    height: 48px;
   }
 
   .heading-input>button,
   .heading-input>input,
   .heading-input>select {
     width: 100%;
-    margin: 8px 0;
+    margin: 6px 0;
     box-sizing: border-box;
   }
 
+  /* figma style fields: grey text, left space, custom arrow */
+  .heading-input>input,
+  .heading-input>input:focus,
+  .heading-input>select {
+    padding: 0 16px;
+    font-size: 1rem;
+  }
+
+  .heading-input>input::placeholder {
+    padding-left: 0;
+  }
+
+  .heading-input>select {
+    color: rgba(19, 19, 24, 0.50);
+    appearance: none;
+    -webkit-appearance: none;
+    background: #FFF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23131318' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right 16px center;
+  }
+
+  .heading-input>button {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .heading-input>button img {
+    width: 20px;
+  }
+
   .heading-text {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+
+  .header-content p {
+    font-size: 0.875rem;
+    line-height: 1.5;
   }
 
   .header-main {
-    padding: 32px 0;
+    padding: 28px 0;
   }
 
   .peragraph {
@@ -791,8 +827,18 @@ footer small {
   }
 
   .logo-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
+  }
+
+  .logo img {
+    width: 36px;
+    margin-right: 6px;
+  }
+
+  .section-head,
+  .destination-text>h3 {
+    font-size: 1.6rem;
   }
 
   nav {
