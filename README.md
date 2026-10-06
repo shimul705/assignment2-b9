@@ -3,11 +3,13 @@
 A modern, responsive landing page for a travel agency, built with **pure HTML5 and CSS3**. It covers destination browsing, tour packages, pricing plans and a newsletter sign-up.
 
 > **Programming Hero — Level 1 · Assignment 2 (Batch 9)**
-> Completed: **January 16, 2024**
+> Completed: **January 16, 2024**  
+> Mark: **60 / 60** 🏆
 
 <p>
   <a href="https://shimul705.github.io/assignment2-b9/"><img alt="Live Demo" src="https://img.shields.io/badge/Live-Demo-FF5400?style=for-the-badge&logo=githubpages&logoColor=white"></a>
   <a href="https://github.com/shimul705/assignment2-b9"><img alt="Source Code" src="https://img.shields.io/badge/Source-Code-131318?style=for-the-badge&logo=github&logoColor=white"></a>
+  <img alt="Mark 60/60" src="https://img.shields.io/badge/Mark-60%2F60-2EA44F?style=for-the-badge">
 </p>
 
 ---
