@@ -38,12 +38,29 @@
           experiences.</p>
       </div>
       <div class="heading-input">
-        <input placeholder="Where go" type="text">
-        <select name="" id="">
+        <input placeholder="Where go" type="text" list="where-list">
+        <datalist id="where-list">
+          <option value="Maldives"></option>
+          <option value="Indonesia"></option>
+          <option value="Srilanka"></option>
+          <option value="Kashmir"></option>
+          <option value="Bandarban"></option>
+        </datalist>
+        <select name="" id="" required>
           <option value="" disabled selected>When</option>
+          <option value="this-week">This Week</option>
+          <option value="next-week">Next Week</option>
+          <option value="this-month">This Month</option>
+          <option value="next-month">Next Month</option>
+          <option value="flexible">Flexible Dates</option>
         </select>
-        <select name="" id="">
+        <select name="" id="" required>
           <option value="" disabled selected>Select Type</option>
+          <option value="adventure">Adventure</option>
+          <option value="beach">Beach &amp; Island</option>
+          <option value="cultural">Cultural &amp; Heritage</option>
+          <option value="family">Family Trip</option>
+          <option value="honeymoon">Honeymoon</option>
         </select>
         <button class="primary-button"><img src="./Images/magnifying.png" alt=""><span>Find Now</span></button>
       </div>
