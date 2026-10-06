@@ -160,6 +160,8 @@ select {
   padding: 14px 25px;
   border: none;
   border-radius: 8px;
+  white-space: nowrap;
+  gap: 6px;
 }
 
 
@@ -272,6 +274,8 @@ header {
 .grid img {
   width: 100%;
   height: 390px;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .grid h3 {
@@ -287,40 +291,13 @@ header {
   position: relative;
 }
 
-.gridtop h3 {
+/* title stays centered on every image at any screen width */
+.grid h3 {
   position: absolute;
-  top: 190px;
-  left: 310px;
-}
-
-.gridimage3 h3 {
-  position: absolute;
-  top: 190px;
-  left: 180px;
-}
-
-.gridimage4 h3 {
-  position: absolute;
-  top: 190px;
-  left: 210px;
-}
-
-.gridimage5 h3 {
-  position: absolute;
-  top: 190px;
-  left: 125px;
-}
-
-.gridimage6 h3 {
-  position: absolute;
-  top: 190px;
-  left: 240px;
-}
-
-.gridimage7 h3 {
-  position: absolute;
-  top: 190px;
-  left: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .gridimage1,
@@ -405,6 +382,10 @@ header {
 .pricing-content hr {
   width: 60%;
   border-top: 2px solid rgba(32, 25, 25, 0.471);
+}
+
+.price-card>ul {
+  padding: 0 16px;
 }
 
 .price-card>ul li {
@@ -540,6 +521,12 @@ header {
 
 .position-70 {
   position: relative;
+  width: 50%;
+}
+
+.position-70 img {
+  width: 100%;
+  display: block;
 }
 
 /* ==========footer========= */
@@ -617,6 +604,104 @@ footer small {
 
 
 
+
+/* =============Responsive for tablet============= */
+@media screen and (max-width: 1024px) {
+
+  nav>ul {
+    width: 50%;
+  }
+
+  .logo-title {
+    font-size: 1.8rem;
+  }
+
+  .heading-text {
+    font-size: 3rem;
+  }
+
+  .peragraph {
+    width: 70%;
+  }
+
+  .header-main {
+    padding: 80px 0;
+  }
+
+  .heading-input {
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 48px auto 0;
+  }
+
+  .heading-input>button,
+  .heading-input>input,
+  .heading-input>select {
+    width: 48%;
+    margin: 6px 0;
+  }
+
+  /* popular tour & perfect place */
+  .popular-tour {
+    flex-direction: column;
+  }
+
+  .pt-content {
+    padding-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .pt-image img {
+    width: 100%;
+  }
+
+  .section-head {
+    font-size: 2rem;
+  }
+
+  /* chose destination */
+  .gridmiddle,
+  .gridbottom {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gridimage5 {
+    grid-column: span 2;
+  }
+
+  .grid img {
+    height: 300px;
+  }
+
+  .grid h3 {
+    font-size: 1.6rem;
+  }
+
+  /* pricing */
+  .pricing-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .price-card {
+    width: 45%;
+  }
+
+  .price-card h2 {
+    font-size: 1.8rem;
+  }
+
+  /* newsletter */
+  .form-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .position-70 {
+    width: 100%;
+  }
+}
 
 /* =============Responsive for mobile============= */
 @media screen and (max-width: 600px) {
@@ -740,46 +825,8 @@ footer small {
     font-weight: 700;
   }
 
-  .gridimage1 h3 {
-    /* position: absolute; */
-    top: 130px;
-    left: 210px;
-  }
-
-  .gridimage2 h3 {
-    /* position: absolute; */
-    top: 130px;
-    left: 200px;
-  }
-
-  .gridimage3 h3 {
-    /* position: absolute; */
-    top: 130px;
-    left: 208px;
-  }
-
-  .gridimage4 h3 {
-    /* position: absolute; */
-    top: 130px;
-    left: 165px;
-  }
-
-  .gridimage5 h3 {
-    /* position: absolute; */
-    top: 130px;
-    left: 210px;
-  }
-
-  .gridimage6 h3 {
-    /* position: absolute; */
-    top: 130px;
-    left: 180px;
-  }
-
-  .gridimage7 h3 {
-    /* position: absolute; */
-    top: 130px;
-    left: 185px;
+  .gridimage5 {
+    grid-column: auto;
   }
 
   /* Why chose us */
@@ -799,6 +846,7 @@ footer small {
   .us .classus {
     width: 100%;
     padding: 0;
+    box-sizing: border-box;
   }
 
   /* newsletter */
